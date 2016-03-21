@@ -10,7 +10,8 @@ function clicked() {
    
    if(pass.value == corpass) {
    
-   window.aler("You are logged in as "+ user.value);
+   window.alert("You are logged in as "+ user.value);
+   window.open("http://wwww.google.com");
    } else {
        window.aler("Incorrect username or password");
     }
