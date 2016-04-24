@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> Welcome! </title>
+    </head>
+    <body>
+        <div class = "container">
+        <div class = "header">
+        <h1>log in to google </h1>
+        </div>
+        <form name="login" onsubmit="return validateForm() ;" method = "post">
+        <ul>
+        <li> UserName:<input class = "username" type = "text" name= "username" id = 'username'>
+        </li>
+        <li>Password: <input class = "password" type = "password" name = "Password" id = 'password'> </li> </ul>
+        <li>LogIn<input type = "button" value = "Log In" name="submit" onClick = "clicked()"></li>
+       </form>
+    </div>
+<script>
+var count=2
+function clicked() {
+  
+  var user = document.getElementById('username');
+  var pass = document.getElementById('password');
+  
+  var coruser = "bhushan";
+  var corpass = "12345";
+  
+  if(user.value == coruser) {
+   
+   if(pass.value == corpass) {
+   
+   window.alert("You are logged in as "+ user.value);
+   window.open("http://www.google.com");
+   } else {
+       window.alert("Incorrect username or password");
+    }
+  } else {
+       window.alert("Incorrect username or password");
+    }
+}
+</script>
+ </body>
+</html>
